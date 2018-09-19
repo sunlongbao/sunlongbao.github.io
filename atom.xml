@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>slb</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://www.sunlongbao.com/"/>
+  <updated>2018-09-18T02:25:42.296Z</updated>
+  <id>http://www.sunlongbao.com/</id>
+  
+  <author>
+    <name>sunlongbao</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>first-post</title>
+    <link href="http://www.sunlongbao.com/2018/09/18/first-post/"/>
+    <id>http://www.sunlongbao.com/2018/09/18/first-post/</id>
+    <published>2018-09-18T02:23:48.000Z</published>
+    <updated>2018-09-18T02:25:42.296Z</updated>
+    
+    <content type="html"><![CDATA[<p>hello world</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;hello world&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>

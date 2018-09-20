@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="神秘毛衣">
 <meta property="og:description" content="before need  git nginx nodejs  Installation1$ npm install hexo-cli -g Quick StartSetup your blog 12$ hexo init blog$ cd blog You can start the server 1$ hexo server 默认端口:4000如果需要其他端口启用，可以加-p参数，如：hexo">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-20T06:21:12.735Z">
+<meta property="og:updated_time" content="2018-09-20T06:40:21.655Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="first-post">
 <meta name="twitter:description" content="before need  git nginx nodejs  Installation1$ npm install hexo-cli -g Quick StartSetup your blog 12$ hexo init blog$ cd blog You can start the server 1$ hexo server 默认端口:4000如果需要其他端口启用，可以加-p参数，如：hexo">
@@ -106,8 +106,11 @@
 <p><strong>Install hexo-deployer-git</strong></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <p>编辑_config.yml</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="string">git@github.com:sunlongbao/blog.github.io.git</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">hexo</span></span><br><span class="line"><span class="attr">  message:</span> <span class="string">from</span> <span class="string">hexo</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="string">git@github.com:sunlongbao/sunlongbao.github.io.git</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">hexo</span></span><br><span class="line"><span class="attr">  message:</span> <span class="string">from</span> <span class="string">hexo</span></span><br></pre></td></tr></table></figure>
 <p>这样执行<code>hexo d</code>会将public目录push到上面分支。</p>
+<blockquote>
+<p>repo的名称如sunlongbao.github.io上.github.io前面部分必须与你github的username相同，这样GitHub Pages的域名会以/解析到该repo上，不会带上repo名称。</p>
+</blockquote>
 <p><strong>Install hexo-helper-live2d</strong></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /root/blog/</span><br><span class="line">$ npm install hexo-helper-live2d --save</span><br><span class="line">$ mkdir /root/github/ &amp; <span class="built_in">cd</span> /root/github/</span><br><span class="line">$ git <span class="built_in">clone</span> git@github.com:xiazeyu/live2d-widget-models.git</span><br><span class="line">$ ln -s /root/github/live2d-widget-models/packages/* /root/blog/node_modules/</span><br><span class="line">$ <span class="built_in">cd</span> /root/blog/</span><br><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure>
 <p>编辑_config.yml</p>
